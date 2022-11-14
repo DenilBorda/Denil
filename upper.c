@@ -3,14 +3,13 @@
 void main()
 {
     int a[12][12];
-    int i,j,row,col,sum=0;
+    int i,j,row,col,b=0;
 
-	printf("Enter the number of rows and columns for 1st matrix\n");
 	printf("your matrix row= ");
 	scanf("%d",&row);
 	printf("\n your matrix columb= ");
 	scanf("%d",&col);
-    printf("Enter the elements of the matrix\n");
+    printf("Enter the elements \n");
     for(i=0;i<row;i++)
     {
         for(j=0;j<col;j++)
@@ -35,12 +34,12 @@ void main()
         	{
             		if(j>i)
 			{
-				sum+=a[i][j];
+				b+=a[i][j];
 			}
         	}
 	
 
         }
-		printf("sum = %d ",sum);
+		printf("b = %d ",b);
 
 }  
