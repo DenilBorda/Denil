@@ -1,25 +1,21 @@
-#include<stdio.h>
-int rev()
+#include <stdio.h>
+int reverse(int n) 
 {
-    int a,b,c,d,e;
-    printf("enter a :");
-    scanf("%d",&a);
-    printf("enter b :");
-    scanf("%d"&b);
-    printf("enter c :");
-    scanf("%d",c);
-    printf("enter d :");
-    scanf("%d",d);
-    a=b;
-    b=c;
-    c=d;
-    d=e;
-    e=a;
-
+  int b = 0, d;
+  
+  while (n != 0) 
+  {
+    d = n % 10;
+    b = b * 10 + d;
+    n = n/10;
+  }
+  return b;
 }
-void main()
+int main()
 {
-   rev();
-   printf("reverce value of : %d",rev);
+    int n,a;
+    printf("Enter Number :");
+    scanf("%d",&n);
+    a = reverse (n);
+    printf("reverse number is %d",a);
 }
-
