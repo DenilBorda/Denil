@@ -5,7 +5,6 @@ int mul(int n)
     
     return n*mul(n-1);
     
-
     else
     
     return 1;
