@@ -26,4 +26,3 @@ void main()
      scanf("%d",&a[i]);
     }
     running(a);
-}                                                                                  
