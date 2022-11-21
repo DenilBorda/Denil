@@ -18,10 +18,13 @@ void setdata()
     int m,s,e;
     printf("Enter maths marks :");
     scanf("%d",&m);
+
     printf("Enter science marks :");
     scanf("%d",&s);
+
     printf("Enter english marks :");
     scanf("%d",&e);
+    
     calculation(m,s,e);
 }
 int main()

@@ -12,7 +12,7 @@ void running(int a[])
         else
         {
             j=a[i] + a[i-1];
-            printf("\n%d\t%d",a[i],j);
+            printf("\n%d \t%d",a[i],j);
         }
     }
 
