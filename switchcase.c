@@ -12,6 +12,8 @@
     printf("\n2. Substraction");
     printf("\n3. Multiplication");
     printf("\n4. Division");
+  do
+  { 
     printf("\nEnter choice : ");
     scanf("%d",&ch);
     switch (ch)
@@ -31,7 +33,10 @@
     
     default:
             printf("\nWrong choice....");
+
         break;
     }
+   } 
+   while (ch != 0);
 
 }
