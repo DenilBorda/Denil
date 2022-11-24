@@ -1,16 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c,*p,*q;
-    printf("Enter The value of p and q :\n ");
+    int a,b,c,*d,*s;
+    printf("Enter The value of a and b :");
     scanf("%d %d",&a,&b);
-    printf("first swapping values \np = %d \nq= %d\n",a,b);
+    printf("first swapping values \nd = %d \ns = %d\n",a,b);
     
-    p = &a;
-    q = &b;
+    d = &a;
+    s = &b;
 
-    c = *q;
-    *q = *p;
-    *p = c;
-    printf("final swapping values \np = %d \nq=%d \n",a,b);  
+    c = *s;
+    *s = *d;
+    *d = c;
+    printf("final swapping values \nd = %d \ns = %d \n",a,b);  
 }
